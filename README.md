@@ -1,36 +1,107 @@
-# ML PROJECT
+# ML Translation Pipeline
 
-Projet généré avec Cookiecutter.
-
----
-
-## 📁 Structure du projet
-src/
-data/
-output/
-tests/
-
+A modular Machine Learning pipeline for automatic text translation and evaluation, generated from a custom Cookiecutter template.
 
 ---
 
-## 👤 Auteur
+## 📌 Overview
 
-Salma
+This project implements a complete NLP pipeline that:
+
+* loads textual data
+* processes and prepares inputs
+* translates text using a pre-trained model
+* evaluates translation quality using standard metrics
+
+The project is built with a modular architecture to ensure flexibility and scalability.
 
 ---
 
-## 🐍 Version Python
+## 🧱 Project Structure
 
-Compatible avec Python 3.10.
+```text id="o1k3mj"
+project/
+├── src/
+│   ├── loaders/        # Data loading
+│   ├── processors/     # Preprocessing
+│   ├── translators/    # Translation models
+│   ├── evaluators/     # Evaluation metrics
+│   └── orchestrator/   # Pipeline coordination
+│
+├── data/               # Input data
+├── output/             # Generated results
+├── tests/              # Unit tests
+├── README.md
+├── pyproject.toml
+└── .gitignore
+```
 
 ---
 
-## 📌 Description
+## ⚙️ Setup
 
-Ce projet sert de squelette pour un pipeline Machine Learning modulaire :
+```bash id="3h6d7n"
+python -m venv .venv
+.venv\Scripts\activate
+pip install -U pip
+pip install -r requirements.txt
+```
 
-- **loaders** : chargement des données  
-- **processors** : prétraitement  
-- **translators** : transformation ou traduction  
-- **evaluators** : évaluation  
-- **orchestrator** : coordination du pipeline  
+---
+
+## ▶️ Usage
+
+Run tests:
+
+```bash id="7b1jzo"
+python -m pytest
+```
+
+Check formatting:
+
+```bash id="c1mx0k"
+black --check .
+```
+
+Run the pipeline (example):
+
+```bash id="2xpw8u"
+python src/orchestrator/pipeline.py
+```
+
+---
+
+## 🧠 Pipeline Architecture
+
+The pipeline is organized into independent components:
+
+* **loaders** → load raw data
+* **processors** → clean and transform data
+* **translators** → apply NLP translation models
+* **evaluators** → compute evaluation metrics (e.g., BLEU)
+* **orchestrator** → manage the execution flow
+
+This design allows each component to be extended or replaced independently.
+
+---
+
+## 🔁 Origin of the Project
+
+This project was generated using a custom Cookiecutter template:
+
+👉 https://github.com/your-username/ml-cookiecutter-template
+
+---
+
+## 🎯 Academic Context
+
+Developed as part of a Big Data and Machine Learning Infrastructure course.
+The objective was to design a reusable project template and demonstrate its application through a complete ML pipeline.
+
+---
+
+## 👤 Author
+
+Salma ALAOUI MRANI
+Master Big Data, Analysis, Business Intelligence
+Université Sorbonne Paris Nord
