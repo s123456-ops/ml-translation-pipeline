@@ -89,7 +89,7 @@ This design allows each component to be extended or replaced independently.
 
 This project was generated using a custom Cookiecutter template:
 
-👉https://github.com/s123456-ops/COOKIECUTTER_ML_PROJECT.git
+👉https://github.com/s123456-ops/ml-cookiecutter-template.git
 
 ---
 
