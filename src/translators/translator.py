@@ -24,7 +24,9 @@ class Translator:
         """
         Traduit une seule phrase.
         """
-        inputs = self.tokenizer(text, return_tensors="pt", truncation=True, padding=True)
+        inputs = self.tokenizer(
+            text, return_tensors="pt", truncation=True, padding=True
+        )
         outputs = self.model.generate(**inputs, max_length=200)
         return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 

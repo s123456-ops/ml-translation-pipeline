@@ -3,6 +3,7 @@ from pathlib import Path
 from src.loaders.json_loader import JsonLoader
 from src.loaders.csv_loader import CSVLoader
 
+
 class LoaderFactory:
     """
     Fabrique orientée objet permettant de sélectionner

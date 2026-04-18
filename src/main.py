@@ -5,6 +5,7 @@ from src.processors.data_processor import DataProcessor
 from src.translators.translator import Translator
 from src.evaluators.evaluator import Evaluator
 
+
 def main():
     """
     Main orchestration function for the translation pipeline.
