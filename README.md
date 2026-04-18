@@ -1,6 +1,6 @@
 # ML Translation Pipeline
 
-A modular Machine Learning pipeline for automatic text translation and evaluation, generated from a custom Cookiecutter template.
+A modular Machine Learning pipeline for automatic text translation and evaluation, built using a custom Cookiecutter template developed for modular ML pipelines.
 
 ---
 
